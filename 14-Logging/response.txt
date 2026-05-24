@@ -1,0 +1,26 @@
+The sky is blue because of a phenomenon called **Rayleigh scattering**.
+
+Here's a breakdown of why it happens:
+
+1.  **Sunlight is White Light:** Sunlight, which appears white to us, is actually made up of a spectrum of colors, just like in a rainbow (red, orange, yellow, green, blue, indigo, violet). Each of these colors has a different wavelength. Blue and violet light have shorter, choppier wavelengths, while red and orange light have longer, more spread-out wavelengths.
+
+2.  **Earth's Atmosphere:** Our planet is surrounded by an atmosphere, which is a blanket of gases, primarily nitrogen (about 78%) and oxygen (about 21%), along with small amounts of other gases and tiny particles.
+
+3.  **Scattering of Light:** When sunlight enters the Earth's atmosphere, it encounters these gas molecules and particles. These molecules and particles are much smaller than the wavelengths of visible light. When light waves hit these tiny obstacles, they get scattered in all directions.
+
+4.  **Rayleigh Scattering's Preference for Shorter Wavelengths:** Rayleigh scattering is more effective at scattering shorter wavelengths of light than longer ones. This is the crucial part.
+    *   **Blue and violet light (shorter wavelengths) are scattered much more strongly** by the tiny gas molecules in the atmosphere.
+    *   **Red and orange light (longer wavelengths) pass through more directly**, with less scattering.
+
+5.  **What We See:** Because blue light is scattered so much in all directions, it appears to come from everywhere in the sky. When we look up, our eyes perceive this scattered blue light, making the sky appear blue.
+
+**Why not violet?**
+
+You might wonder why the sky isn't violet, since violet light has an even shorter wavelength and is scattered even more than blue. There are a couple of reasons:
+
+*   **Our Eyes' Sensitivity:** Our eyes are more sensitive to blue light than they are to violet light.
+*   **Sun's Spectrum:** The sun emits slightly less violet light than blue light to begin with.
+
+So, while violet light is scattered, the combination of our eyes' sensitivity and the sun's output means that blue light dominates what we perceive.
+
+**In summary:** The sky is blue because the tiny molecules in the Earth's atmosphere scatter the shorter, bluer wavelengths of sunlight more effectively than the longer, redder wavelengths. This scattered blue light reaches our eyes from all directions, making the sky appear blue.

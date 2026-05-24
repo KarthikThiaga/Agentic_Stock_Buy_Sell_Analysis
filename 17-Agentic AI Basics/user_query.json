@@ -1,0 +1,50 @@
+{
+    "amazn": {
+        "resolved": "AMZN",
+        "confidence": 90,
+        "source": "fuzzy",
+        "count": 3
+    },
+    "microsft": {
+        "resolved": "MSFT",
+        "confidence": 94,
+        "source": "fuzzy",
+        "count": 3
+    },
+    "apple": {
+        "resolved": "AAPL",
+        "confidence": 100,
+        "source": "fuzzy",
+        "count": 38
+    },
+    "amaz": {
+        "resolved": "AMZN",
+        "confidence": 90.0,
+        "source": "fuzzy",
+        "count": 1
+    },
+    "amazon": {
+        "resolved": "AMZN",
+        "confidence": 100,
+        "source": "fuzzy",
+        "count": 37
+    },
+    "microsoft": {
+        "resolved": "MSFT",
+        "confidence": 96,
+        "source": "fuzzy",
+        "count": 9
+    },
+    "tesla": {
+        "resolved": "TSLA",
+        "confidence": 92,
+        "source": "llm",
+        "count": 2
+    },
+    "google": {
+        "resolved": "GOOG",
+        "confidence": 100.0,
+        "source": "fuzzy",
+        "count": 1
+    }
+}

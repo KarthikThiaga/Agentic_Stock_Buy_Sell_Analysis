@@ -1,0 +1,27 @@
+f'''
+        Extract stock entities from the query.
+
+        Query: {query}
+
+        Return STRICT JSON:
+
+        {{
+        "entities": [
+            {{
+            "input": "appl",
+            "resolved": "AAPL", 
+            "confidence": 0.7
+            }}
+        ]
+        }}
+
+        Rules:
+        - "input" = exact word/phrase from query
+        - confidence = your certainty (0 to 1)
+        - If none:
+        {{"entities": []}}
+        - this entities should contain only stock related word
+        - Stops words shall be ignored in entities
+
+        NO extra text.
+    '''
