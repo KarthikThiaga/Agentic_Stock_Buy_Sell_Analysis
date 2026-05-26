@@ -6,9 +6,7 @@ from storage.read_memory import read_memory
 
 
 
-def get_price(ticker,url):
-
-    print('into get_price')
+def get_price(ticker,config):
 
     current_date = datetime.date(datetime.now())
 
@@ -21,11 +19,12 @@ def get_price(ticker,url):
     if cache_price:
         return cache_price
     
-    api_url = url
+    api_url = config.get("url")
+    api_key = config.get("key")
 
     params = { 
         "symbol": ticker,
-        "token": 'd6v6jk9r01qig546muf0d6v6jk9r01qig546mufg'
+        "token": api_key
     }
 
     response = api_call(ticker,api_url,params,'price')

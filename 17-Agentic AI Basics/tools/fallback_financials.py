@@ -4,16 +4,18 @@ from tools.fallback_compute_metric import fall_back_compute_metric
 FALL_API_KEY = 'D5UBRFGP3EKH7ROG'
 
 
-def fall_back_finance(ticker,url):
+def fall_back_finance(ticker,config):
     print(f"Falling back to secondary method for finance data for {ticker}")
+    api_url = config.get("url")
+    api_key = config.get("key")
+
     function = 'BALANCE_SHEET'
     params = {
         'function': function,
         'symbol': ticker,
-        'apikey': FALL_API_KEY
+        'apikey': api_key
     }
-    response = api_call(ticker, url, params=params, field='fallback_finance')
-    # if response.status_code == 200:
+    response = api_call(ticker, api_url, params=params, field='fallback_finance')
     try:
         annual_reports = {}
         data = response

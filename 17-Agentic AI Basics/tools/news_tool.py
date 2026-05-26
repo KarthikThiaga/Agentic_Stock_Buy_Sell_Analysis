@@ -7,7 +7,7 @@ from tools.get_from_memory import get_from_memory
 from tools.update_memory import update_memory
 import json
 
-def get_news(ticker,url):
+def get_news(ticker,config):
     if not ticker:
         raise Exception('Ticker missing for news fetch')
     
@@ -22,11 +22,13 @@ def get_news(ticker,url):
 
     recent_news = []
 
-    api_url = url
+    api_url = config.get("url")
+    api_key = config.get("key")
+
     params = {
         "q":ticker,
         "searchIn": "title",
-        "apiKey": "7edafe2e5d804d59b16f305502fc5c54"
+        "apiKey": api_key
     }
 
 
