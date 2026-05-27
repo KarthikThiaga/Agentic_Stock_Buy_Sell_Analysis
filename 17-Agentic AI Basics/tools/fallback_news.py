@@ -2,17 +2,21 @@ from tools.api_call import api_call
 from datetime import datetime
 FALL_API_KEY = 'D5UBRFGP3EKH7ROG'
 
-def fall_back_news(ticker,url):
+
+
+def fall_back_news(ticker,config):
     print(f"Falling back to secondary method for news for {ticker}")
-    url = url
+    api_url = config.get("url")
+    api_key = config.get("key")
+    
     params = {
         "function": "NEWS_SENTIMENT",
         "tickers": ticker,
-        "apikey": FALL_API_KEY
+        "apikey": api_key
     }
 
     try:
-        res = api_call(ticker, url, params=params, field='fallback_news')
+        res = api_call(ticker, api_url, params=params, field='fallback_news')
         recent_news = []
         feed = res.get('feed', [])
 

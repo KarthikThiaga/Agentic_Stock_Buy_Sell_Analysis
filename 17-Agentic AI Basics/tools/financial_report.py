@@ -7,7 +7,7 @@ from tools.get_from_memory import get_from_memory
 from tools.update_memory import update_memory
 
 
-def get_financial_reports(ticker,url):
+def get_financial_reports(ticker,config):
     
     current_date = datetime.date(datetime.now())
     memory = read_memory()
@@ -18,13 +18,15 @@ def get_financial_reports(ticker,url):
         return cached_fin
                 
     annual_data = {}
-    api_url = url
+    api_url = config.get("url")
+    api_key = config.get("key")
     params = { 
         "symbol": ticker,
-        "token": 'd6v6jk9r01qig546muf0d6v6jk9r01qig546mufg'
+        "token": api_key
     }
     
-    response = api_call(ticker,api_url, params, 'financials')
+    response = api_call(ticker,url=api_url, params=params, field='financials')
+
     try:
         if response == 'none':
             return annual_data

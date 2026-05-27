@@ -5,22 +5,24 @@ from core.generate_output_with_retries import generate_output_with_retries
 from core.output_validation import output_validation
 from config.settings import Settings
 
+settings = Settings()
+
 API_CONFIG = {
     "price": {
-        "url": Settings.PRICE_API_URL,
-        "key": Settings.PRICE_API_KEY
+        "url": settings.PRICE_API_URL,
+        "key": settings.PRICE_API_KEY
     },
     "news": {
-        "url": Settings.NEWS_API_URL,
-        "key": Settings.NEWS_API_KEY
+        "url": settings.NEWS_API_URL,
+        "key": settings.NEWS_API_KEY
     },
     "financials": {
-        "url": Settings.FINANCIAL_REPORT_URL,
-        "key": Settings.FINANCE_API_KEY
+        "url": settings.FINANCIAL_REPORT_URL,
+        "key": settings.FINANCE_API_KEY
     },
     "fallback": {
-        "url": Settings.FALLBACK_API_URL,
-        "key": Settings.FALLBACK_API_KEY
+        "url": settings.FALLBACK_API_URL,
+        "key": settings.FALLBACK_API_KEY
     }
 }
 

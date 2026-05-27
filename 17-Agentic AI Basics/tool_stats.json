@@ -1,21 +1,21 @@
 {
     "news": {
-        "calls": 31,
-        "successes": 23,
+        "calls": 36,
+        "successes": 28,
         "failures": 0,
         "fallback successes": 8,
         "fallback failures": 0
     },
     "financials": {
-        "calls": 25,
-        "successes": 25,
+        "calls": 29,
+        "successes": 27,
         "failures": 0,
-        "fallback successes": 0,
+        "fallback successes": 2,
         "fallback failures": 0
     },
     "price": {
-        "calls": 30,
-        "successes": 29,
+        "calls": 35,
+        "successes": 34,
         "failures": 0,
         "fallback successes": 1,
         "fallback failures": 0
