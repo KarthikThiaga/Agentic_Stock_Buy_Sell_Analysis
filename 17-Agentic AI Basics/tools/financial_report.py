@@ -5,9 +5,32 @@ from datetime import datetime
 from storage.read_memory import read_memory
 from tools.get_from_memory import get_from_memory
 from tools.update_memory import update_memory
+from config.logger import logger
 
 
 def get_financial_reports(ticker,config):
+
+    """Retrieves, caches, and processes corporate financial statements for a specified ticker.
+
+    Coordinates historical balance sheet evaluation by first checking local caching tables 
+    (memory) against the current calendar execution date to minimize redundant network I/O. 
+    If a cache miss occurs, it targets a structured REST API endpoint to pull multiple years 
+    of data. It then isolates the most recent reporting cycle, parses row labels through a metric 
+    resolution engine using a heuristic scoring metric to find optimal matches, extracts relevant values, 
+    and passes them to a computation utility. Finally, it records the newly evaluated data structure 
+    back into persistent storage before delivery.
+
+    Args:
+        ticker (str): The unique financial asset abbreviation identifier (e.g., 'AAPL').
+        config (Dict[str, Any]): A configuration dictionary containing access keys and endpoint parameters:
+            - "url" (str): The primary api dataset routing destination address.
+            - "key" (str): The api authorization token.
+
+    Returns:
+        Dict[str, int | float]: A dictionary containing calculated accounting metrics and 
+        financial health indicators for the latest fiscal period. Returns an empty dictionary 
+        if the API service returns a validation failure string or if structural data parsing errors occur.
+    """
     
     current_date = datetime.date(datetime.now())
     memory = read_memory()
@@ -20,6 +43,7 @@ def get_financial_reports(ticker,config):
     annual_data = {}
     api_url = config.get("url")
     api_key = config.get("key")
+
     params = { 
         "symbol": ticker,
         "token": api_key
@@ -61,6 +85,7 @@ def get_financial_reports(ticker,config):
 
 
     except Exception as ex3:
+        logger.exception(f'event=get_financial_reports operation=parsing status=failure exception={ex3}')
         print(f"get_financial_report function exception: {ex3}")
         return {}
 

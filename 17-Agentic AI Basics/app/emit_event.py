@@ -3,6 +3,15 @@ from app.ui import StreamlitUIDisplay
 StreamlitUI = StreamlitUIDisplay()
 
 def emit_event(message):
+    """
+        Provide the message with message type
+        events will be displayed in the UI screen.
+        input format:
+        message = {
+            type: 'info' <info/error/success/warning/exception/spinner/progress/output>
+            message: '' <any UI message that want to be displayed>
+        }
+    """
     if message['type'] == 'info':
         StreamlitUI.ui_info(message.get('text',''))
     

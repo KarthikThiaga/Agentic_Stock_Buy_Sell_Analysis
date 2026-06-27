@@ -10,6 +10,116 @@
                 "cash": 35934000000.0,
                 "debt_ratio": 0.7947533828265705
             }
+        },
+        "2026-05-28": {
+            "price": 310.85,
+            "news": [
+                "Morgan Stanley Raises Apple (AAPL) Price Target, Keeps Overweight Rating",
+                "March Quarter Results Bolster Confidence in Apple Inc (AAPL) Stock",
+                "Jim Cramer\u2019s Still a Believer in Apple (AAPL)",
+                "Jim Cramer Shares Key Insights About Apple (AAPL)",
+                "Apple Inc. (AAPL): Chris Rokos Likes This Tech Stock",
+                "Apple Inc. (AAPL): A Top Stock Pick by Graham Stephan?"
+            ],
+            "financials": {
+                "assets": 359241000000,
+                "liabilities": 285508000000,
+                "cash": 35934000000.0,
+                "debt_ratio": 0.7947533828265705
+            }
+        },
+        "2026-06-05": {
+            "price": 311.23
+        },
+        "2026-06-06": {
+            "news": [
+                "March Quarter Results Bolster Confidence in Apple Inc (AAPL) Stock",
+                "Jim Cramer Shares Key Insights About Apple (AAPL)",
+                "Apple Inc. (AAPL): Renaissance Technologies Opens New Position",
+                "Apple Inc. (AAPL): Chris Rokos Likes This Tech Stock",
+                "Apple Inc. (AAPL): A Top Stock Pick by Graham Stephan?",
+                "Apple Inc. (AAPL)\u2019s Durable Growth Narrative Keeps Getting Stronger"
+            ],
+            "financials": {
+                "assets": 359241000000,
+                "liabilities": 285508000000,
+                "cash": 35934000000.0,
+                "debt_ratio": 0.7947533828265705
+            },
+            "price": 307.34
+        },
+        "2026-06-10": {
+            "price": 289.18,
+            "news": [
+                "Jim Cramer Shares Key Insights About Apple (AAPL)",
+                "Apple Inc. (AAPL): Renaissance Technologies Opens New Position",
+                "Is Apple Inc. (AAPL) A Good Stock To Buy Now?",
+                "Apple Inc. (AAPL): Chris Rokos Likes This Tech Stock",
+                "Apple Inc. (AAPL): A Top Stock Pick by Graham Stephan?",
+                "Apple Inc. (AAPL)\u2019s Durable Growth Narrative Keeps Getting Stronger"
+            ],
+            "financials": {
+                "assets": 359241000000,
+                "liabilities": 285508000000,
+                "cash": 35934000000.0,
+                "debt_ratio": 0.7947533828265705
+            }
+        },
+        "2026-06-15": {
+            "price": 291.13
+        },
+        "2026-06-16": {
+            "price": 296.42,
+            "news": [
+                "AAPL stock slides, but is it a reaction to AI announcements?",
+                "AAPL Stock Slides Following WWDC, But Analysts Broadly Raise Targets",
+                "Apple (AAPL) Declined Defies Strong Fundamentals",
+                "Jim Cramer Shares Key Insights About Apple (AAPL)",
+                "Apple Inc. (AAPL): Renaissance Technologies Opens New Position",
+                "Is Apple Inc. (AAPL) A Good Stock To Buy Now?"
+            ],
+            "financials": {
+                "assets": 359241000000,
+                "liabilities": 285508000000,
+                "cash": 35934000000.0,
+                "debt_ratio": 0.7947533828265705
+            }
+        },
+        "2026-06-19": {
+            "price": 298.01,
+            "news": [
+                "AAPL stock slides, but is it a reaction to AI announcements?",
+                "AAPL Stock Slides Following WWDC, But Analysts Broadly Raise Targets",
+                "Apple (AAPL) Declined Defies Strong Fundamentals",
+                "Apple Inc. (AAPL): A Top Stock Pick by Graham Stephan?",
+                "Jim Cramer Shares Key Insights About Apple (AAPL)",
+                "Apple Inc. (AAPL): Renaissance Technologies Opens New Position"
+            ],
+            "financials": {
+                "assets": 359241000000,
+                "liabilities": 285508000000,
+                "cash": 35934000000.0,
+                "debt_ratio": 0.7947533828265705
+            }
+        },
+        "2026-06-20": {
+            "price": 298.01,
+            "news": [
+                "AAPL stock slides, but is it a reaction to AI announcements?",
+                "AAPL Stock Slides Following WWDC, But Analysts Broadly Raise Targets",
+                "Apple (AAPL) Declined Defies Strong Fundamentals",
+                "Apple Inc. (AAPL): A Top Stock Pick by Graham Stephan?",
+                "Apple Inc. (AAPL): Renaissance Technologies Opens New Position",
+                "Is Apple Inc. (AAPL) A Good Stock To Buy Now?"
+            ]
+        },
+        "2026-06-22": {
+            "financials": {
+                "assets": 359241000000,
+                "liabilities": 285508000000,
+                "cash": 35934000000.0,
+                "debt_ratio": 0.7947533828265705
+            }
         }
     },
     "AMZN": {
@@ -19,6 +129,85 @@
                 "liabilities": 218005000000,
                 "cash": 86810000000.0,
                 "debt_ratio": 0.2664960967774271
+            }
+        },
+        "2026-05-28": {
+            "financials": {
+                "assets": 818042000000.0,
+                "liabilities": 218005000000,
+                "cash": 86810000000.0,
+                "debt_ratio": 0.2664960967774271
+            },
+            "price": 271.85,
+            "news": [
+                "Amazon (AMZN) Q1 2026 Earnings Call Transcript",
+                "Jim Cramer Continues to Gush About Amazon.com (AMZN) CEO",
+                "Jim Cramer Makes Big Prediction About Amazon.com (AMZN)",
+                "Amazon (AMZN) Secures Major AWS Deal With Meta",
+                "Amazon.com Inc. (AMZN): Mark Cuban Remains Bullish in AI Era",
+                "Amazon\u2019s (AMZN) AWS, OpenAI Partner to Integrate Frontier Models into Amazon Bedrock Ecosystem"
+            ]
+        },
+        "2026-06-16": {
+            "price": 246.02,
+            "news": [
+                "Amazon.com Inc. (AMZN) Buy Rating Reiterated by BofA Securities",
+                "Amazon.com Inc. (AMZN): Mark Cuban Remains Bullish in AI Era",
+                "Amazon Stock: Is AMZN Underperforming the Technology Sector?",
+                "How Much Upside Can AMZN Stock's Growth Deliver?",
+                "Wolfe Names Amazon (AMZN) a Top Internet Sector Pick",
+                "Is Amazon.com, Inc. (AMZN) A Good Stock To Buy Now?"
+            ],
+            "financials": {
+                "assets": 818042000000.0,
+                "liabilities": 218005000000,
+                "cash": 86810000000.0,
+                "debt_ratio": 0.2664960967774271
+            }
+        },
+        "2026-06-19": {
+            "price": 244.39,
+            "news": [
+                "Amazon\u2019s (AMZN) Alexa+ Available for Canadian Customers",
+                "Amazon.com Inc. (AMZN) Buy Rating Reiterated by BofA Securities",
+                "UBS recommends Amazon.com Inc (AMZN) Stock. Here\u2019s the Reason",
+                "Amazon.com Inc. (AMZN): Mark Cuban Remains Bullish in AI Era",
+                "Amazon Stock: Is AMZN Underperforming the Technology Sector?",
+                "How Much Upside Can AMZN Stock's Growth Deliver?"
+            ],
+            "financials": {
+                "assets": 818042000000.0,
+                "liabilities": 218005000000,
+                "cash": 86810000000.0,
+                "debt_ratio": 0.2664960967774271
+            }
+        },
+        "2026-06-22": {
+            "financials": {
+                "assets": 818042000000.0,
+                "liabilities": 218005000000,
+                "cash": 86810000000.0,
+                "debt_ratio": 0.2664960967774271
+            }
+        }
+    },
+    "MSFT": {
+        "2026-05-28": {
+            "financials": {
+                "assets": 191131000000,
+                "liabilities": 13709000000,
+                "cash": 30242000000.0,
+                "debt_ratio": 0.07172567506056056
+            }
+        }
+    },
+    "GOOG": {
+        "2026-05-28": {
+            "financials": {
+                "assets": 0,
+                "liabilities": 2428000000,
+                "cash": 16549000000,
+                "debt_ratio": 0
             }
         }
     }

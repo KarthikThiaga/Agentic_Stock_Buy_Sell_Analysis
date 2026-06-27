@@ -1,23 +1,23 @@
 {
     "news": {
-        "calls": 36,
-        "successes": 28,
-        "failures": 0,
-        "fallback successes": 8,
-        "fallback failures": 0
+        "calls": 68,
+        "successes": 52,
+        "failures": 1,
+        "fallback successes": 14,
+        "fallback failures": 1
     },
     "financials": {
-        "calls": 29,
-        "successes": 27,
+        "calls": 55,
+        "successes": 52,
         "failures": 0,
-        "fallback successes": 2,
+        "fallback successes": 3,
         "fallback failures": 0
     },
     "price": {
-        "calls": 35,
-        "successes": 34,
-        "failures": 0,
-        "fallback successes": 1,
-        "fallback failures": 0
+        "calls": 71,
+        "successes": 59,
+        "failures": 1,
+        "fallback successes": 9,
+        "fallback failures": 2
     }
 }

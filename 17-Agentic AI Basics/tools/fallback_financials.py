@@ -1,11 +1,32 @@
 from tools.api_call import api_call
 from tools.fallback_resolve_metric import resolve_financial_term
 from tools.fallback_compute_metric import fall_back_compute_metric
-FALL_API_KEY = 'D5UBRFGP3EKH7ROG'
+from config.logger import logger
 
 
 def fall_back_finance(ticker,config):
-    print(f"Falling back to secondary method for finance data for {ticker}")
+
+    """Retrieves and processes financial balance sheet data via a secondary api channel.
+
+    Acts as a failover routine when primary financial data paths are exhausted. The function 
+    queries an external balance sheet endpoint, extracts the latest available annual statement based 
+    on the most recent fiscal tracking date, translates the raw vendor keys into standardized accounting 
+    terms, and computes relevant corporate financial health metrics.
+
+    Args:
+        ticker (str): The financial stock ticker symbol representing the target corporation.
+        config (Dict[str, Any]): A configuration dictionary containing access keys and endpoint parameters:
+            - "url" (str): The fallback endpoint routing URL.
+            - "key" (str): The api authorization token.
+
+    Returns:
+        Dict[str, float | int]: A dictionary of normalized accounting values and computed 
+        leverage metrics (e.g., debt ratio) extracted from the latest balance sheet. Returns 
+        an empty dictionary if an API timeout or an error during structural data parsing occurs.
+    """
+
+    # print(f"Falling back to secondary method for finance data for {ticker}")
+    logger.info(f'event=fall_back_finance msg=Falling back to secondary method for finance data for {ticker}')
     api_url = config.get("url")
     api_key = config.get("key")
 
@@ -30,9 +51,11 @@ def fall_back_finance(ticker,config):
 
             financial_data = fall_back_compute_metric(annual_reports)
         else:
-            print(f"No time series data found for {ticker} in fallback API.")
+            logger.info(f'event=fall_back_finance msg=No time series data found for {ticker} in fallback API')
+            # print(f"No time series data found for {ticker} in fallback API.")
     except Exception as e:
-        print(f"Error parsing fallback API response for {ticker}: {e}")
+        logger.exception(f'event=fall_back_finance operation=parsing status=failure exception={e}')
+        # print(f"Error parsing fallback API response for {ticker}: {e}")
         return {}
 
     return financial_data

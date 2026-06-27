@@ -22,6 +22,31 @@ fall_back_capabilities = {
 }
 
 def execute_tool(required):
+    """Executes multiple data-fetching tools for a list of target entities.
+
+    This function processes a batch of requirements grouped by entity (such as a 
+    stock ticker). It iterates through each entry, extracts the entity name and 
+    its requested data needs (e.g., price, news, financials), and invokes the 
+    dynamic tool execution workflow to retrieve and aggregate the results.
+
+    Args:
+        required (List[Dict[str, Any]]): A list of dictionaries where each item 
+            specifies an entity and its associated requirements. 
+            Example:
+                [
+                    {'entity': 'AAPL', 'needs': ['price', 'news']},
+                    {'entity': 'MSFT', 'needs': ['financials']}
+                ]
+
+    Returns:
+        Dict[str, Dict[str, Any]]: A nested dictionary mapping each entity to 
+        its gathered data results. Returns an empty dictionary `{}` if a 
+        `KeyError` or unexpected exception occurs during parsing.
+
+    Events Emitted:
+        Emits an initial "info" level event via `emit_event` indicating that 
+        tool execution has commenced.
+    """
     emit_event(
         {
             'type': 'info',

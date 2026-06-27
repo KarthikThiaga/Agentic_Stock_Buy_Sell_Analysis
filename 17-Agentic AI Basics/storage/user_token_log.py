@@ -3,9 +3,24 @@ from storage.write_user_query_file import write_user_query_file
 from models.normalize import normalize
 
 def user_token_log(entity,score,match,logic):
-    user_query_log = read_user_query_file()
+    """Logs and maintains analytics on entity tokens extracted from user queries.
 
-    print(f'user_query_log: {user_query_log}')
+    Tracks historical occurrences of normalized entity tokens by updating an ongoing 
+    log file. If an entity token has been processed before, its invocation counter 
+    is incremented and its running mean confidence score is dynamically updated. 
+    Otherwise, a new tracking record is initialized. The finalized state is then 
+    committed back to persistent storage.
+
+    Args:
+        entity (str): The raw string token parsed from the user's query text.
+        score (int | float): The classification confidence score assigned by the 
+            resolving matcher tool.
+        match (str): The resolved target value (e.g., stock ticker) associated 
+            with the entity.
+        logic (str): The specific matching strategy applied to resolve the token 
+            (e.g., 'fuzzy' or 'llm').
+    """
+    user_query_log = read_user_query_file()
 
     word = normalize(entity)
 

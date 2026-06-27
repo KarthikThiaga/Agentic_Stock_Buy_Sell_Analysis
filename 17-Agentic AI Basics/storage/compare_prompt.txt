@@ -15,10 +15,11 @@
         3. News sentiment
 
         Rules:
-        - If one stock clearly stronger → choose it
-        - If similar strength → say "similar strength"
-        - If one has better price and other has better financial → say "mixed signals"
-        - Output should be a single line with name of the stock. This is most important rule. Do NOT output anything else.
-        - If mixed signals → say "no clear winner"
+        - Output should be "name of the stock" not ticker if found stronger one
+        - If one stock clearly stronger → choose it - This rule should be priority
+        - If similar strength → say "similar strength" - This should be second priority 
+        - If one has better price and other has better financial → say "mixed signals" but rarely use it try find out best
+        - Output should be a "name of the stock" instead of ticker with one line explanation (not more than 50 words) of why you chose it. Your reason should be convincing for any investor. Don't display numbers to prove just throw logics. This is most important rule. Do NOT output anything else
+        - If mixed signals → say "no clear winner" with an explanation not more than 50 words - This should rarely used 
         - Do NOT default to insufficient unless truly missing
         No Assumptions

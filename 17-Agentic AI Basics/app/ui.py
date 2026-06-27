@@ -1,6 +1,10 @@
 import streamlit as st
 
 def display_ui():
+    """
+        UI display doesnt't take any arguments
+    """
+
     st.title("Agentic AI for Stock Queries")
     st.header("Enter your stock related query below:")
 
@@ -84,4 +88,4 @@ class StreamlitUIDisplay:
     def ui_selectbox(self,label, options):
         with self.container:
             return st.selectbox(label, options)
-
+    

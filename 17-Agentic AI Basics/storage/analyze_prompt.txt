@@ -13,8 +13,10 @@
         Answer should be based ONLY on the data provided.
         No Assumptions
         With the data provided - Analyze on 3 parameters - financial strength (debt ratio, cash), current price (relative valuation hint), news sentiment.
-        If all parameters indicate strong buy → say "strong buy"
-        If all parameters indicate strong sell → say "strong sell"
+        If all parameters indicate strong buy → say "strong buy" - Explain it in a convincing sentence (not more than 50 words) - Strictly follow rules
+        If all parameters indicate strong sell → say "strong sell" - Explain it in a convincing sentence (not more than 50 words) - Strictly follow rules
+        Logic should not expose numbers or news - but a Investor friendly analysis 
+        You should display only the "Name of the stock" Not the Ticker
         If mixed signals → say "no clear recommendation" - Use it very very rarely
         Try to provide either buy or sell recommendation based on the data.
         buy, sell, hold, strong buy, strong sell - these are the only outputs allowed.
