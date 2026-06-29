@@ -120,6 +120,23 @@
                 "cash": 35934000000.0,
                 "debt_ratio": 0.7947533828265705
             }
+        },
+        "2026-06-30": {
+            "price": 282.28,
+            "news": [
+                "AAPL stock slides, but is it a reaction to AI announcements?",
+                "AAPL Stock Slides Following WWDC, But Analysts Broadly Raise Targets",
+                "Apple (AAPL) Declined Defies Strong Fundamentals",
+                "Is Apple Inc. (AAPL) A Good Stock To Buy Now?",
+                "Apple Kicks Off WWDC. How to Play AAPL Stock Here.",
+                "Apple Inc. (AAPL): Renaissance Technologies Opens New Position"
+            ],
+            "financials": {
+                "assets": 359241000000,
+                "liabilities": 285508000000,
+                "cash": 35934000000.0,
+                "debt_ratio": 0.7947533828265705
+            }
         }
     },
     "AMZN": {
@@ -183,6 +200,23 @@
             }
         },
         "2026-06-22": {
+            "financials": {
+                "assets": 818042000000.0,
+                "liabilities": 218005000000,
+                "cash": 86810000000.0,
+                "debt_ratio": 0.2664960967774271
+            }
+        },
+        "2026-06-30": {
+            "price": 240.34,
+            "news": [
+                "Amazon\u2019s (AMZN) Alexa+ Available for Canadian Customers",
+                "Amazon.com Inc. (AMZN) Buy Rating Reiterated by BofA Securities",
+                "UBS recommends Amazon.com Inc (AMZN) Stock. Here\u2019s the Reason",
+                "Amazon.com, Inc. (AMZN) Is A Top Richard Chilton AI Stock",
+                "How Much Upside Can AMZN Stock's Growth Deliver?",
+                "Is Amazon.com, Inc. (AMZN) A Good Stock To Buy Now?"
+            ],
             "financials": {
                 "assets": 818042000000.0,
                 "liabilities": 218005000000,

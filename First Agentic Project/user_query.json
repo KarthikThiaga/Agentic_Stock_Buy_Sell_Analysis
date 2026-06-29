@@ -15,7 +15,7 @@
         "resolved": "AAPL",
         "confidence": 84,
         "source": "fuzzy",
-        "count": 245
+        "count": 247
     },
     "amaz": {
         "resolved": "AMZN",
@@ -27,7 +27,7 @@
         "resolved": "AMZN",
         "confidence": 100,
         "source": "fuzzy",
-        "count": 76
+        "count": 78
     },
     "microsoft": {
         "resolved": "MSFT",

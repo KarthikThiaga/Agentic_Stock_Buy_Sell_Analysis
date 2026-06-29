@@ -41,7 +41,7 @@ def choose_execution_path(need):
                 
                 if stats['failures'] > 0:
                     failure_rescue_rate = (
-                            stats['fallback successes']/stats['failure']
+                            stats['fallback successes']/stats['failures']
                     )
                 else:
                     failure_rescue_rate = 0
